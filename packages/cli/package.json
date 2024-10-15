@@ -2,7 +2,7 @@
   "name": "@yton/cli",
   "version": "0.1.1",
   "description": "a cli tool for yton",
-  "private": "false",
+  "private": false,
   "main": "index.js",
   "type": "module",
   "bin": {
