@@ -1,0 +1,24 @@
+{
+  "name": "@yton/utils",
+  "version": "0.1.0",
+  "description": "utils for @yton/cli",
+  "type": "module",
+  "module": "index.js",
+  "main": "index.js",
+  "private": "false",
+  "keywords": [
+    "cli",
+    "utils"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "yton",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "inquirer": "^12.0.0",
+    "npmlog": "^7.0.1",
+    "ora": "^8.1.0"
+  }
+}

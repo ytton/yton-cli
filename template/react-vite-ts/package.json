@@ -1,0 +1,11 @@
+{
+  "name": "@yton/react-vite-ts",
+  "version": "0.1.1",
+  "description": "use vite create react ts template",
+  "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "yton",
+  "license": "ISC"
+}

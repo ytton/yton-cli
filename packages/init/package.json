@@ -1,0 +1,23 @@
+{
+  "name": "@yton/init",
+  "version": "0.1.0",
+  "description": "a cli command for init template",
+  "type": "module",
+  "main": "index.js",
+  "private": false,
+  "keywords": [
+    "cli",
+    "command",
+    "init template"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "yton",
+  "license": "ISC",
+  "dependencies": {
+    "@yton/utils": "workspace:^",
+    "execa": "^9.4.0",
+    "fs-extra": "^11.2.0"
+  }
+}

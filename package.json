@@ -1,0 +1,26 @@
+{
+  "name": "yton",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "yton-cli"
+  },
+  "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "yton",
+  "license": "ISC",
+  "dependencies": {
+    "@changesets/cli": "^2.27.9",
+    "@yton/cli": "workspace:*",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "dirname-filename-esm": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "eslint": "^9.12.0"
+  }
+}

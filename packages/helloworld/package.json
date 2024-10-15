@@ -1,0 +1,17 @@
+{
+  "name": "@yton/helloworld",
+  "version": "0.1.0",
+  "description": "cli command hello world",
+  "main": "src/index.js",
+  "type": "module",
+  "keywords": [
+    "cli",
+    "command",
+    "hello world"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "yton",
+  "license": "ISC"
+}

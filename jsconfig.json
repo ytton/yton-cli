@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"],
+      "@yton/*": ["packages/*"]
+    },
+    "resolveJsonModule": true,
+    "checkJs": true
+  },
+  "include": ["packages/**/*"],
+  "exclude": ["node_modules"]
+}

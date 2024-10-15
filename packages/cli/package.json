@@ -1,0 +1,36 @@
+{
+  "name": "@yton/cli",
+  "version": "0.1.1",
+  "description": "a cli tool for yton",
+  "private": "false",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "yton-cli": "bin/index.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "node",
+    "cli"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "yton",
+  "license": "ISC",
+  "dependencies": {
+    "@yton/helloworld": "workspace:*",
+    "@yton/init": "workspace:*",
+    "@yton/utils": "workspace:*",
+    "import-local": "^3.2.0",
+    "semver": "^7.6.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.25.7",
+    "@types/jest": "^29.5.13",
+    "execa": "^6.1.0",
+    "jest": "^29.7.0"
+  }
+}
