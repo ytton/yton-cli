@@ -1,6 +1,6 @@
 {
   "name": "@yton/cli",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "a cli tool for yton",
   "private": false,
   "main": "index.js",

@@ -16,7 +16,7 @@ export const copyTarget = async (target, options) => {
   log.debug('templateDir', templateDir);
   log.debug('outputDir', outputDir);
   try {
-    fse.copySync(templateDir, outputDir);
+    await fse.copy(templateDir, outputDir);
     const pkgPath = path.join(outputDir, 'package.json');
     let pkg = await fse.readFile(pkgPath, 'utf-8');
     // 修改 name 值

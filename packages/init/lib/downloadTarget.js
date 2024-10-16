@@ -1,5 +1,5 @@
 import { log } from '@yton/utils';
-import { execaSync } from 'execa';
+import { execa } from 'execa';
 import { homedir } from 'node:os';
 import fse from 'fs-extra';
 import path from 'node:path';
@@ -17,7 +17,7 @@ export const downloadTarget = async target => {
   fse.ensureDirSync(target.cacheDir);
   const spinner = loading('downloading template ...');
   try {
-    execaSync(`npm`, ['install', `${pkgName}@latest`], { cwd: target.cacheDir });
+    await execa(`npm`, ['install', `${pkgName}@latest`], { cwd: target.cacheDir });
   } catch (error) {
     spinner.fail('download template fail');
     throw error;

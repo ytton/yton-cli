@@ -23,7 +23,12 @@ export const registryInitCommand = command => {
       });
       log.debug('target', target);
       await downloadTarget(target);
-      copyTarget(target, options);
+      await copyTarget(target, options);
+      console.log('\n');
+      console.log('Now, you can run the following command:')
+      console.log(`  cd ${name}`);
+      console.log(`  npm i`);
+      console.log(`  npm run dev`);
     });
 };
 

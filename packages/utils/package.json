@@ -1,6 +1,6 @@
 {
   "name": "@yton/utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "utils for @yton/cli",
   "type": "module",
   "module": "index.js",
@@ -12,6 +12,9 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "dev": "node ./lib/ora.js"
   },
   "author": "yton",
   "license": "ISC",
