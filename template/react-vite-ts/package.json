@@ -1,6 +1,6 @@
 {
   "name": "@yton/react-vite-ts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "use vite create react ts template",
   "keywords": [],
   "publishConfig": {
