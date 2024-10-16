@@ -13,15 +13,15 @@ export const copyTarget = async (target, options) => {
   }
   fse.ensureDirSync(outputDir);
   const spinner = loading('init template ...');
-  log.verbose('templateDir', templateDir);
-  log.verbose('outputDir', outputDir);
+  log.debug('templateDir', templateDir);
+  log.debug('outputDir', outputDir);
   try {
     fse.copySync(templateDir, outputDir);
     const pkgPath = path.join(outputDir, 'package.json');
     let pkg = await fse.readFile(pkgPath, 'utf-8');
     // 修改 name 值
     pkg = pkg.replace(/"name"\s*:\s*".*?"/, `"name": "${name}"`);
-    log.verbose('pkg', pkg);
+    log.debug('pkg', pkg);
     // 将更新后的 JSON 数据写回文件
     await fse.writeFile(pkgPath, pkg, 'utf-8');
   } catch (error) {

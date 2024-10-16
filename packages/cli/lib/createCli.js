@@ -13,8 +13,6 @@ const preAction = () => {
 };
 
 export default function createCli() {
-  // 初始化log head
-  log.heading = CLI_NAME;
   // 创建项目
   program
     .name(CLI_NAME)
@@ -25,7 +23,7 @@ export default function createCli() {
 
   program.on('option:debug', () => {
     if (program.opts().debug) {
-      log.verbose('debug mode enabled');
+      log.debug('debug mode enabled');
     }
   });
 

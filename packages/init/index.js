@@ -21,7 +21,7 @@ export const registryInitCommand = command => {
         type: ['page', 'project'].find(key => options[key] === true),
         template: options.template
       });
-      log.verbose('target', target);
+      log.debug('target', target);
       await downloadTarget(target);
       copyTarget(target, options);
     });

@@ -13,17 +13,17 @@ export const downloadTarget = async target => {
 
   const { pkgName } = templateInfo;
   target.cacheDir = path.join(homedir(), '.yton', 'templates');
-  log.verbose('缓存目录', target.cacheDir);
+  log.debug('缓存目录', target.cacheDir);
   fse.ensureDirSync(target.cacheDir);
   const spinner = loading('downloading template ...');
   try {
-    execaSync(`npm`, ['install', pkgName], { cwd: target.cacheDir });
+    execaSync(`npm`, ['install', `${pkgName}@latest`], { cwd: target.cacheDir });
   } catch (error) {
     spinner.fail('download template fail');
     throw error;
   }
   spinner.succeed('download template success');
   target.templateDir = path.join(target.cacheDir, 'node_modules', pkgName, 'template');
-  log.verbose('模板目录', target.templateDir);
+  log.debug('模板目录', target.templateDir);
   return target;
 };
