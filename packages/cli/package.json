@@ -1,6 +1,6 @@
 {
   "name": "@yton/cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a cli tool for yton",
   "private": false,
   "main": "index.js",
@@ -24,6 +24,9 @@
     "@yton/helloworld": "workspace:*",
     "@yton/init": "workspace:*",
     "@yton/utils": "workspace:*",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "dirname-filename-esm": "^1.1.2",
     "import-local": "^3.2.0",
     "semver": "^7.6.3"
   },
